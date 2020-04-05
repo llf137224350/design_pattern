@@ -8,6 +8,6 @@ export default class Product {
     }
     // 方法
     public toString():string {
-        return `调用了${this.name}的toString方法！`;
+        return `我是${this.name}的toString方法！`;
     }
 }
