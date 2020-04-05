@@ -7,6 +7,9 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js' // 输出的文件名称
     },
+    resolve: {
+        extensions: ['.js', '.ts']
+    },
     mode: 'development', // development：开发模式 production：生产模式
     // development：开发模式 建议 cheap-module-eval-source-map
     // production：生产模式 建议 cheap-module-source-map
@@ -35,7 +38,7 @@ module.exports = {
     },
     devServer: {
         contentBase: './dist', // 根目录
-        open: true, // 是否打开浏览器
+        open: false, // 是否打开浏览器
         port: '8081' // 端口
     }
 };
