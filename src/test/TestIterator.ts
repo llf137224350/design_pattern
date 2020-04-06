@@ -9,4 +9,10 @@ export default function () {
 
     }
     createElementAppendBody('迭代器模式');
+
+    const nodeList = document.getElementsByTagName('div');
+    const iterator1 = IteratorFactory.getIterator(nodeList as any);
+    while (iterator1.hasNext()) {
+        console.log(iterator1.next().innerText);
+    }
 }
