@@ -1,10 +1,11 @@
 import Subject from '../observer/Subject';
 import Observer from '../observer/Observer';
+import createElementAppendBody from '../utils/Utils';
 /*
  * @Author: い 狂奔的蜗牛 
  * @Date: 2020-04-06 12:06:52 
  * @Last Modified by: い 狂奔的蜗牛
- * @Last Modified time: 2020-04-06 12:14:36
+ * @Last Modified time: 2020-04-06 13:42:35
  * @Desc：观察者模式测试
  */
 export default function () {
@@ -21,15 +22,5 @@ export default function () {
         subject.setState(1);
     }, 2000);
 
-    const mode = document.createElement('div');
-    mode.innerText = '观察者模式';
-    const ul = document.createElement('ul');
-
-    const li = document.createElement('li');
-    li.innerText = '浏览器开发模式下，查看效果';
-
-
-    ul.appendChild(li);
-    document.body.appendChild(mode);
-    document.body.appendChild(ul);
+    createElementAppendBody('观察者模式');
 }

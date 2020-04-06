@@ -2,7 +2,7 @@
  * @Author: い 狂奔的蜗牛 
  * @Date: 2020-04-06 09:00:43 
  * @Last Modified by: い 狂奔的蜗牛
- * @Last Modified time: 2020-04-06 09:11:50
+ * @Last Modified time: 2020-04-06 13:37:07
  * @Desc：测试单例设计模式
  */
 import SingleObject from '../SingleObject/SingleObject';
